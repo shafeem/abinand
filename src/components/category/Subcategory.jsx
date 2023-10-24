@@ -63,7 +63,7 @@ const Subcategory = ({ categories, onCreateCategory }) => {
                   onChange={handleInputChange}
                 >
                  
-                  {categories.map((category) => (
+                  {categories?.map((category) => (
                     <option key={category?._id} value={category?._id}>
                       {category?.categoryname}
                     </option>

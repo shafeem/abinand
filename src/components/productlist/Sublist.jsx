@@ -51,7 +51,7 @@ const Sublist = () => {
                   //  value={parentCategory}
                   onChange={handleInputChange}
                 >
-                  {catgories.map((category) => (
+                  {catgories?.map((category) => (
                     <option key={category._id} value={category._id}>
                       {category?.categoryname}
                     </option>

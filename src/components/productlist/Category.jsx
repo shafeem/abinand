@@ -37,7 +37,7 @@ function Category() {
                   className=" text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none"
                   name="parentCategory"
                 >
-                  {categories.map((category) => (
+                  {categories?.map((category) => (
                     <option key={category._id} value={category._id}>
                       {category?.categoryname}
                     </option>

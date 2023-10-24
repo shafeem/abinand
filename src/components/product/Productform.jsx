@@ -126,7 +126,7 @@ const Productform = () => {
                   //  onChange={handleInputChange}
                 >
                   {/* <option value={null}>No Parent (Top-level Category)</option> */}
-                  {categories.map((category) => (
+                  {categories?.map((category) => (
                     <option key={category._id} value={category?.categoryname}>
                       {category?.categoryname}
                     </option>
